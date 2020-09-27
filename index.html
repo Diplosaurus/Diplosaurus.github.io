@@ -239,19 +239,19 @@
 </div>
 
 <p>
-    In addition, we attempt to restore the original, unsharpened image by taking the sharpened image and blurring it using the Gaussian again. The result is below. As you can see, blurring the sharpened image doesn't quite restore the original image. This is expected since we got the sharpened image through the addition of a high pass filtered image, whereas blurring it simply blurs this sharpened image.
+    We start with a sharpened image, blur it, then sharpen it again to see if we can get the original image. The result is below. As you can see, we don't get back the sharpened image by doing this. However, it does look like we get the original unsharpened image back
 </p>
 
 <div align="middle">
   <table style="width=100%">
     <tr>
       <td>
-        <img src="puppy.jpeg" align="middle" width="400px"/>
-        <figcaption align="middle">Original image</figcaption>
+        <img src="owl.jpg" align="middle" width="400px"/>
+        <figcaption align="middle">Original sharpened image</figcaption>
       </td>
       <td>
-        <img src="blurred_sharpened_puppy.jpg" align="middle" width="400px"/>
-        <figcaption align="middle">Unsharpened image</figcaption>
+        <img src="sharpened_owl.jpg" align="middle" width="400px"/>
+        <figcaption align="middle">Image after blurring then sharpening again</figcaption>
       </td>
     </tr>
   </table>
